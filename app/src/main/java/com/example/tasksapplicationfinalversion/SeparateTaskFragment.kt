@@ -35,8 +35,6 @@ class SeparateTaskFragment : Fragment(R.layout.fragment_separate_task) {
                 taskIsCompleted.text = it.isCompleted.toString()
             }
         }
-
-
         binding.btnGoBack.setOnClickListener {
             Navigation.findNavController(view)
                 .navigate(R.id.action_separateTaskFragment_to_taskFragment)
